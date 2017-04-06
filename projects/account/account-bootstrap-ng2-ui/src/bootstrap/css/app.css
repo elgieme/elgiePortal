@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+
+.toolbar{
+	margin: 0;
+	padding: 5px;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-bottom-width: 0px;
+	background-color: #e9e9e9; 
+}
+
+.dataTables_length{
+	float: right;
+}
+
+.dataTables_wrapper .panel-body{
+	padding: 0;
+}
+
+.select-checkbox{
+	width: 15px;
+}

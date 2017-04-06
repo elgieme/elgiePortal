@@ -1,0 +1,10 @@
+<form (ngSubmit)="doLogin()" #login="ngForm">
+	<app-input-text [(ngModel)]="loginForm.username"
+		id="username" name="username" type="text"
+		title="Username"></app-input-text>
+	<app-input-text [(ngModel)]="loginForm.password"
+		id="password" name="password" type="password"
+		title="Password	"></app-input-text>
+	<button type="submit" class="btn btn-default">Submit</button>
+</form>
+

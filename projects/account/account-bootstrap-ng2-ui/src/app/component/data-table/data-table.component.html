@@ -1,0 +1,14 @@
+
+<table class="table table-striped table-hover lg1-data-table">
+	<thead>
+		<tr>
+			<th>accountId</th>
+			<th><ng-content></ng-content></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let item of items">
+			<app-data-table-column [master]="item"></app-data-table-column>
+		</tr>
+	</tbody>
+</table>

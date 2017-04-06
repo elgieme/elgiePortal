@@ -1,0 +1,32 @@
+<div class="lg-table-buttons">
+	<a (click)="removeAccounts()"><span class="glyphicon glyphicon-trash"></span> Remove</a>
+</div>
+
+
+<div *ngIf="(accounts)?.length > 0" >
+<table class="table table-striped table-hover lg-data-table">
+	<thead>
+		<tr>
+			<th></th> 
+			<th>Id</th>
+			<th>Username12</th>
+			<th>E-mail</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let account of (accounts)" >
+			<td (click)="selectAccount(account.accountId)"></td>
+			<td>{{account.accountId}}</td>
+			<td>{{account.username}}</td>
+			<td>{{account.email}}</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div>
+
+<app-data-table [items]="(accounts)">
+</app-data-table>
+
+</div>

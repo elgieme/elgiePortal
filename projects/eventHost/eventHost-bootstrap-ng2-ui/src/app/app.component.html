@@ -1,0 +1,22 @@
+<nav
+	class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-primary">
+	<button class="navbar-toggler navbar-toggler-right" type="button"
+		data-toggle="collapse" data-target="#navbarNavAltMarkup"
+		aria-controls="navbarNavAltMarkup" aria-expanded="false"
+		aria-label="Toggle navigation"
+		dataToggle="collapse" dataTarget="#collapsedNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<a class="navbar-brand" href="/">{{title}}</a>
+
+	<div class="collapse navbar-collapse" id="collapsedNavbar">
+		<ul class="nav navbar-nav">
+			<li class="nav-item"><a class="nav-link"
+				routerLink="/event/details">Details</a></li>
+		</ul>
+	</div>
+</nav>
+<div class="container elg-content">
+	<router-outlet> </router-outlet>
+</div>

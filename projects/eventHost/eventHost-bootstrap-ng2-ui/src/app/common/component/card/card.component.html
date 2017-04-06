@@ -1,0 +1,17 @@
+
+	<div *ngIf="title != null" class="card-header">
+		<div class="card-title">{{title}}</div>
+		<button type="button" class="btn" dataToggle="collapse" dataTarget="#cardBlock"
+			aria-label="Close">
+          <span class="fa fa-minus"></span>
+        </button>
+	</div>
+	<div class="collapse show" id="cardBlock">
+		<div class="card-block">
+			<ng-content></ng-content>
+		</div>
+		<div *ngIf="footer" class="card-footer">
+			Footer
+		</div>
+	</div>
+

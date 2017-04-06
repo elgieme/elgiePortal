@@ -1,0 +1,15 @@
+<form (ngSubmit)="onCreate()" #createAccount="ngForm">
+	<app-input-text [(ngModel)]="account.username"
+			id="username" name="username" type="text"
+			title="Username"></app-input-text>
+	<app-input-text [(ngModel)]="account.email"
+			id="email" name="email" type="email"
+			title="E-mail"></app-input-text>
+	<app-input-text [(ngModel)]="account.password"
+			id="password" name="password" type="password"
+			title="Password"></app-input-text>
+	<app-input-text [(ngModel)]="account.confirmPassword"
+			id="confirmPassword" name="confirmPassword" type="password"
+			title="Confirm Password"></app-input-text>
+	<button type="submit" class="btn btn-default">Create</button>	
+</form>

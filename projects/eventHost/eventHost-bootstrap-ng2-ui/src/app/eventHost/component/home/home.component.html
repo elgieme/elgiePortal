@@ -1,0 +1,126 @@
+<div class="card-deck mb-5">
+		<app-card styleClass="" title="Details">
+			<p>Party Information.....</p>
+			<button routerLink="/event/rsvp" type="button" class="btn btn-primary">RSVP</button>
+			<button type="button" class="btn btn-default">Details</button>
+		</app-card>
+</div>
+<div class="card-deck mb-5">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">Test 1</div>
+				<button type="button" class="btn" dataToggle="collapse" 
+					dataTarget="#testOneCollapse"
+					aria-label="Close"
+					[open]="openOne">
+		          <span class="fa fa-minus"></span>
+		        </button>
+			</div>
+			<div class="collapse show" id="testOneCollapse"
+				[@collapse]="show">
+				<div class="card-block">
+					<div class="row">
+						<div class="col-sm-3">
+							Field 1
+						</div>
+						<div class="col-sm-3">
+							Field 2
+						</div>
+						<div class="col-sm-3">
+							Field 3
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<button>Save</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				Test 2
+			</div>
+			<div class="card-block">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Col 1</th>
+							<th>Col 2</th>
+							<th>Col 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>One</td>
+							<td>Two</td>
+							<td>Three</td>
+						</tr>
+						<tr>
+							<td>One</td>
+							<td>Two</td>
+							<td>Three</td>
+						</tr>
+						<tr>
+							<td>One</td>
+							<td>Two</td>
+							<td>Three</td>
+						</tr>
+						<tr>
+							<td>One</td>
+							<td>Two</td>
+							<td>Three</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+</div>
+<div class="card-deck">	
+		<div class="card">
+			<div class="card-header">
+				Test 2
+			</div>
+			<div class="card-block">
+				<ng-content></ng-content>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-block">
+				<ng-content></ng-content>
+			</div>
+			<div class="card-footer">
+				Footer
+			</div>
+		</div>
+</div>
+
+<button dataToggle="modal" dataTarget="#modalTest">Open Modal</button>
+
+<div class="modal fade" id="modalTest">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" dataDismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" dataDismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
